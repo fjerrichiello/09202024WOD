@@ -1,0 +1,6 @@
+@RetreadWOD_HostAddress = http://localhost:5140
+
+GET {{RetreadWOD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
