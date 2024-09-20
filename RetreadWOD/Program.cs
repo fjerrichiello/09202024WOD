@@ -12,7 +12,9 @@ var configuration = builder.Configuration;
 
 
 configuration.AddEnvironmentVariables();
-// services.AddOpenAIChatCompletion("gpt-3", configuration[]);
+
+var apiKey = configuration["AI:OpenAI:ApiKey"];
+services.AddOpenAIChatCompletion("gpt-3", apiKey!);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

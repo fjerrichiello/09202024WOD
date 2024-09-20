@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetreadWOD", "RetreadWOD\RetreadWOD.csproj", "{94AC4903-3FCB-4482-804C-53B25C8B0F46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetreadWOD.UnitTests", "RetreadWOD.UnitTests\RetreadWOD.UnitTests.csproj", "{49062150-823B-4F82-A06A-DB85CCF06C2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{94AC4903-3FCB-4482-804C-53B25C8B0F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94AC4903-3FCB-4482-804C-53B25C8B0F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94AC4903-3FCB-4482-804C-53B25C8B0F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49062150-823B-4F82-A06A-DB85CCF06C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49062150-823B-4F82-A06A-DB85CCF06C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49062150-823B-4F82-A06A-DB85CCF06C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49062150-823B-4F82-A06A-DB85CCF06C2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
