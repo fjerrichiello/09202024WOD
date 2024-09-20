@@ -1,13 +1,17 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.SemanticKernel;
 using RetreadWOD.Persistence;
 using RetreadWOD.Persistence.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
+var configuration = builder.Configuration;
 
-;
+
+configuration.AddEnvironmentVariables();
+// services.AddOpenAIChatCompletion("gpt-3", configuration[]);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

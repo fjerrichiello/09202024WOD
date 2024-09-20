@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RetreadWOD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+447f422d3cee11b6a97810b1f5d06e89f4d7f2c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1adc0694ef21693788a27e30d33fea79002807de")]
 [assembly: System.Reflection.AssemblyProductAttribute("RetreadWOD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RetreadWOD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
