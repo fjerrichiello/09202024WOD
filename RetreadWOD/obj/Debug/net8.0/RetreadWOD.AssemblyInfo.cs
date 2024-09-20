@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a716a1c1-0b5c-47e6-aa3a-ebd3826b4991")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("RetreadWOD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1adc0694ef21693788a27e30d33fea79002807de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1a9f2242b6ef77a8caee0f946d578ba52254ef2")]
 [assembly: System.Reflection.AssemblyProductAttribute("RetreadWOD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RetreadWOD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

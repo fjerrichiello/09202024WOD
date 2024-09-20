@@ -4,7 +4,7 @@ namespace RetreadWOD.Endpoints;
 
 public static class ChatEndpoints
 {
-    public static void MapBookEndpoints(this WebApplication app)
+    public static void MapChatEndpoints(this WebApplication app)
     {
         app.MapPost("/v1/chat", MessageBot);
     }

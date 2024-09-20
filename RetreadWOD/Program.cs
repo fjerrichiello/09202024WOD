@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.SemanticKernel;
+using RetreadWOD.Endpoints;
 using RetreadWOD.Persistence;
 using RetreadWOD.Persistence.Models;
 
@@ -18,7 +19,6 @@ configuration.AddEnvironmentVariables();
 services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme);
 services.AddAuthorizationBuilder();
 
-
 services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Database")));
 
@@ -28,6 +28,7 @@ services.AddSwaggerGen();
 builder.Services.AddIdentityCore<ApiUser>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddApiEndpoints();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,6 +37,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.MapIdentityApi<ApiUser>();
+
+app.MapChatEndpoints();
 
 app.UseHttpsRedirection();
 
