@@ -15,7 +15,6 @@ services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme);
 services.AddAuthorizationBuilder();
 
 
-
 services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Database")));
 
